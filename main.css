@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+
+/* for making  this to center */
+nav {
+    margin: 20px auto;
+    position: sticky;
+    width: 80%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    flex-basis: 20%;
+}
+.logo img {
+    width: 150px;
+}
+/* for making nav tags into right */
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li  {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+/* -- over -- */
+
+.information {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);   /* it will be vertically centered */
+}
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%; /* bcx we are creating a  circle */
+    /* background: #ccc;  */
+    transform: rotate(0deg);
+    transition: 1s;
+}
+/* -- over -- */
+
+.feature img {
+width: 70px;
+
+}
+.feature {
+    position: absolute;
+    color: #fff;
+    display: flex; /* -- the images and text will be  in same line -- */
+}
+.feature div {
+    margin-left: 30px;
+}
+.feature div p {
+    margin-top: 5px;
+}
+.one {
+    top: 450px;
+    right: 50px;
+}
+.two {
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+.three {
+    bottom: 450px; 
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 150x;
+    right: 350px ;
+    transform: rotate(-270deg);
+}
+/* -- over -- */
+.mobile {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.controls {
+    position: absolute;
+    right: 10%; top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3 {
+    margin: 15px 0;
+    color: #fff;
+}
+
+#upBtn {
+    width: 15px;
+    cursor: pointer;
+}
+#downBtn {
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    left: 0;
+  
+
+}
+
